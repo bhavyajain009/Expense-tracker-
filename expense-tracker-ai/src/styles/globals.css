@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-light text-textColor;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded shadow-card p-6 mb-5;
+  }
+  
+  .btn {
+    @apply inline-block bg-primary text-white py-3 px-5 rounded font-semibold cursor-pointer transition-all duration-300 ease-in-out w-full mt-3;
+  }
+  
+  .btn:hover {
+    @apply opacity-90 -translate-y-0.5;
+  }
+  
+  .btn-danger {
+    @apply bg-danger;
+  }
+  
+  .btn-success {
+    @apply bg-secondary;
+  }
+  
+  .form-group {
+    @apply mb-4;
+  }
+  
+  .form-group label {
+    @apply block mb-1 font-semibold;
+  }
+  
+  .form-group input, .form-group select {
+    @apply w-full p-3 border border-gray-300 rounded text-base;
+  }
+  
+  .category-badge {
+    @apply inline-block px-2 py-1 rounded-full text-xs text-white text-center;
+  }
+} 
